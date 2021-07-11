@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/hind_light"
+        android:padding="20dp"
+        android:text="SmartPad is an innovative attachable device for your pad, to provide you with a wealth of information about your period. This information includes the color, heaviness, and even clotting. It also informs you when your pad must be changed! Buy our product today and learn more about your period."
+        android:textColor="@color/black"
+        android:id="@+id/about_us"
+        android:textSize="20dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"
+        android:id="@+id/guide_left"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"
+        android:id="@+id/guide_right"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_button_curved"
+        android:text="BUY OUR PRODUCT"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide_left"
+        app:layout_constraintRight_toRightOf="@id/guide_right"
+        android:elevation="5dp"
+        android:fontFamily="@font/hind_light"
+        app:layout_constraintTop_toBottomOf="@id/about_us"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sign_out_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

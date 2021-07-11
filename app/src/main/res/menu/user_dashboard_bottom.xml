@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:checked="true"
+        android:title=""
+        android:icon="@drawable/home_icon"
+        android:id="@+id/dashboard_menu"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title=""
+        android:icon="@drawable/calendar_icon"
+        android:id="@+id/tracker_menu"
+        app:showAsAction="ifRoom"/>
+    <item android:title=""
+        android:id="@+id/holder"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title=""
+        android:icon="@drawable/profile_icon"
+        android:id="@+id/profile_menu"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title=""
+        android:icon="@drawable/ic_info_white_18dp"
+        android:id="@+id/about_menu"
+        app:showAsAction="ifRoom"/>
+</menu>

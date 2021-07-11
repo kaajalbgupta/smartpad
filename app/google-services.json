@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1041345146303",
+    "firebase_url": "https://smartpad-19f1b-default-rtdb.firebaseio.com",
+    "project_id": "smartpad-19f1b",
+    "storage_bucket": "smartpad-19f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041345146303:android:b699f56a894d3dcb93050a",
+        "android_client_info": {
+          "package_name": "com.example.smartpad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041345146303-oj6g20mnl5dcvp2fjhcrfdk6trah35kk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBencSILKuk9hh3M_W_3wrs7EyDDQoyFBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041345146303-oj6g20mnl5dcvp2fjhcrfdk6trah35kk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

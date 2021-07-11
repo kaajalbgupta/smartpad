@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:colorControlNormal="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar"
+            android:textColor="@android:color/white"
+            app:contentInsetStart="0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/hind_light"
+                    android:textSize="21sp"
+                    android:text="Dashboard"/>
+                <View
+                    android:background="#E0E0E0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_marginBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation_view"
+        android:id="@+id/user_fragment_container" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"/>
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:elevation="0dp"
+        app:itemTextColor="@color/bnv_color_selector_text"
+        app:itemIconTint="@color/bnv_color_selector"
+        app:itemBackground="@color/white"
+        android:background="@color/white"
+        app:menu="@menu/user_dashboard_bottom" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/period_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="#aa2484"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        app:elevation="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:id="@+id/period_button_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/hind_light"
+        tools:text="START \nPERIOD"
+        android:elevation="15dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
